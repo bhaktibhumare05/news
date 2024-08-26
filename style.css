@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* border: 1px solid red; */
+    background-color: white;
+}
+
+body{
+    background-color: rgb(199, 210, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HEADING{
+    color: orangered;
+    margin-left: 6px;
+    font-size: 10px;
+}
+
+header{
+    font-size: 25px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+hr{
+    width: 100%;
+    color: black;
+    background-color: black;
+    margin: 1px;
+}
+
+.first-line{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.first-line .box{
+    width: 170px;
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.first-line .box:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box i{
+    color: red;
+}
+
+.first-line .box img{
+    width: 150px;
+}
+
+.first-line .box p{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.second-line{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.second-line .box{
+    width: 170px;
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.second-line .box:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box i{
+    color: red;
+    cursor: pointer;
+}
+
+.second-line .box img{
+    width: 150px;
+}
+
+.second-line .box p{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.third-line{
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: row;
+}
+
+.third-line .box{
+    width: 170px;
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.third-line .box:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box i{
+    color: red;
+}
+
+.third-line .box img{
+    width: 150px;
+}
+
+.third-line .box p{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+input{
+    padding: 5px;
+    width: 220px;
+    padding-left: 25px;
+}
+
+button{
+    color: wheat;
+    background-color: red;
+    border: none;
+    padding: 5px;
+    position: relative;
+    right: 10px;
+}
+
+.input-box{
+    margin-top: 30px;
+    display: flex;
+}
+
+.input-box i{
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.api{
+    display: inline-flex;
+    font-size: 10px;
+}
+
+lable{
+    color: rgb(102, 102, 102);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    section {
+        width: 80%;
+    }
+
+    .first-line, .second-line, .third-line {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section {
+        width: 90%;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    .box img {
+        width: 100%;
+    }
+
+    .HEADING {
+        font-size: 8px;
+    }
+}
